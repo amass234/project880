@@ -1,0 +1,46 @@
+ <Skeleton avatar={{ shape: 'square', size: 'large' }} loading={this.state.loading} paragraph={{ rows: 4 }} active>
+                            <Carousel>
+                                {this.state.novelList.map((novel, i) => {
+                                    return (
+                                        <div key={i}>
+                                            <Row>
+                                                <Col sm="3">
+                                                    <img src={novel.cover} alt="" className="NCardcover img-fluid" />
+                                                </Col>
+                                                <Col sm="8" className="NcardMain-2">
+                                                    <div className="NCardmain">
+                                                        <h3 className="NCardh3 text-monospace"><span>{novel.title}</span></h3>
+                                                        <div>
+                                                            <h5 className="NCardh5">
+                                                                <Avatar src={novel.avatar} className="NCardavatar" />
+                                                                by <span>{novel.author}</span>
+                                                                {/* <Tooltip placement="rightTop" title="ติดตามนักเขียน">
+                                            <a href="#" style={{ color: '#ff0000' }}><Icon type="plus-square" theme="outlined" /></a>
+                                        </Tooltip> */}
+                                                            </h5>
+                                                            {/* <h6 className="NCardbio">{novel.description}</h6> */}
+                                                        </div>
+                                                    </div>
+                                                    <div className="NCardread">
+                                                        <Tooltip placement="left" title="เริ่มอ่าน">
+                                                            <Button ghost type="default" size={'large'} className="NCardbuttonEdit episodeB">
+                                                                <Link href={`/novel?id=${novel.id}`} as={`/novel-${novel.id}`}>
+                                                                    <a>
+                                                                        <Icon type="read" theme="filled" />
+                                                                    </a>
+                                                                </Link>
+                                                            </Button>
+                                                        </Tooltip>
+                                                        <Tooltip placement="top" title="เพิ่มเข้าชั้นหนังสือ">
+                                                            <Button ghost type="default" icon="plus-square" size={'large'} className="NCardbuttonEdit episodeB" />
+                                                        </Tooltip>
+                                                        <Tooltip placement="top" title="แก้ไข">
+                                                        </Tooltip>
+                                                    </div>
+                                                </Col>
+                                            </Row>
+                                        </div>
+                                    )
+                                })}
+                            </Carousel>
+                        </Skeleton>

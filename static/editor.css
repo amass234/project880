@@ -1,0 +1,188 @@
+.editor {
+    font-family: "PraJad", "PraJaditalic", "PraJad-bold", "PraJad-boldItalic";
+    font-size: 25px;
+    line-height: 2.3;
+    cursor: text;
+    padding: 0;
+    margin-bottom: 2em;
+    background: #ffffff;
+    border: none;
+    outline: none;
+}
+
+.editor p {
+    font-family: "PraJad", "PraJaditalic", "PraJad-bold", "PraJad-boldItalic";
+    font-size: 25px;
+    line-height: 2.3;
+}
+
+.editor :global(.public-DraftEditor-content) {
+    min-height: 140px;
+}
+
+.headlineButtonWrapper {
+    display: inline-block;
+}
+
+.headlineButton {
+    background: #fbfbfb;
+    color: #888;
+    font-size: 18px;
+    border: 0;
+    padding-top: 5px;
+    vertical-align: bottom;
+    height: 34px;
+    width: 36px;
+}
+
+.headlineButton:hover,
+.headlineButton:focus {
+    background: #f3f3f3;
+}
+
+.draftJsToolbar__buttonWrapper__1Dmqh {
+    display: inline-block;
+}
+
+.draftJsToolbar__button__qi1gf {
+    background: #ffffff;
+    color: #888;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    vertical-align: bottom;
+    height: 34px;
+    width: 36px;
+}
+
+.draftJsToolbar__button__qi1gf svg {
+    fill: #888;
+}
+
+.draftJsToolbar__button__qi1gf:hover,
+.draftJsToolbar__button__qi1gf:focus {
+    background: #f3f3f3;
+    outline: 0;
+    /* reset for :focus */
+}
+
+.draftJsToolbar__active__3qcpF {
+    background: #efefef;
+    color: #444;
+}
+
+.draftJsToolbar__active__3qcpF svg {
+    fill: #444;
+}
+
+.draftJsToolbar__separator__3U7qt {
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    height: 24px;
+    margin: 0 0.5em;
+}
+
+.draftJsToolbar__toolbar__dNtBH {
+    background: #fff;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.draftJsToolbar__toolbar__dNtBH:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #fff;
+    border-width: 4px;
+    margin-left: -4px;
+}
+
+.draftJsToolbar__toolbar__dNtBH:before {
+    border-color: rgba(221, 221, 221, 0);
+    border-top-color: #ddd;
+    border-width: 6px;
+    margin-left: -6px;
+}
+
+.input-group {
+    position: relative;
+    float: right;
+    width: auto;
+    margin-right: 10px;
+}
+
+.input-group .search {
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #ffffff;
+    outline: none;
+    padding: 5px;
+    position: relative;
+    transition: all 150ms cubic-bezier(0.2, 0.6, 0.252, 1.2);
+    border: 2px solid #87bade;
+}
+
+.input-group .search~.bar {
+    height: 4px;
+    width: 15px;
+    background: #fff;
+    border-radius: 4px;
+    position: absolute;
+    display: block;
+    opacity: 1;
+    right: -9px;
+    top: 24px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: opacity 150ms ease;
+    border: 2px solid #87bade;
+}
+
+.input-group .search::-webkit-input-placeholder {
+    color: #87bade;
+}
+
+.input-group .search:-ms-input-placeholder {
+    color: #87bade;
+}
+
+.input-group .search::-ms-input-placeholder {
+    color: #87bade;
+}
+
+.input-group .search::placeholder {
+    color: #87bade;
+}
+
+.input-group .search:focus {
+    height: 35px;
+    width: 200px;
+    border-radius: 3px;
+    color: #636363;
+    cursor: initial;
+}
+
+.input-group .search:focus::-webkit-input-placeholder {
+    color: #a1a1a1;
+}
+
+.input-group .search:focus:-ms-input-placeholder {
+    color: #a1a1a1;
+}
+
+.input-group .search:focus::-ms-input-placeholder {
+    color: #a1a1a1;
+}
+
+.input-group .search:focus::placeholder {
+    color: #a1a1a1;
+}
+
+.input-group .search:focus~.bar {
+    box-shadow: none;
+    opacity: 0;
+    right: 0;
+    top: 5px;
+}
